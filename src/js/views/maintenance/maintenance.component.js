@@ -12,3 +12,5 @@ export class MaintenanceComponent extends React.Component {
         )
     }
 }
+
+export default MaintenanceComponent;

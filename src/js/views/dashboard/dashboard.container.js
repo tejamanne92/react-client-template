@@ -1,17 +1,17 @@
 import DashboardComponent from './dashboard.component';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import { userDetails } from '../../actions/user-details.action';
 
 const mapStateToProps = (state, ownProps) => {
-    let dashboardData = {
-        userDetails: state.login
+    return {
+        login: state.login,
+        alert: state.alert
     }
-    console.log('DashboardData:::::' + JSON.stringify(dashboardData));
-    return dashboardData;
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => {
     return null;
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(DashboardComponent);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(DashboardComponent));

@@ -13,3 +13,5 @@ export class GalleryComponent extends React.Component {
         )
     }
 }
+
+export default GalleryComponent;

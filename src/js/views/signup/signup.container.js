@@ -1,5 +1,6 @@
 import { signupWithEmail } from '../../actions/signup.action';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import SignupComponent from './signup.component';
 
 export const mapStateToProps = (state) => {
@@ -14,4 +15,4 @@ export const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(SignupComponent);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(SignupComponent));

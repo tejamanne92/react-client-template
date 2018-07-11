@@ -1,6 +1,6 @@
 const INITIAL_STATE = {}
 
-export const Settings = (state = INITIAL_STATE, action) => {
+export const Dashboard = (state = INITIAL_STATE, action) => {
     switch (action.type) {
         case "":
             break;

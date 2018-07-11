@@ -1,8 +1,9 @@
-const INITIAL_STATE = {}
+const INITIAL_STATE = {};
 
-export const Settings = (state = INITIAL_STATE, action) => {
+export const Reports = (state = INITIAL_STATE, action) => {
     switch (action.type) {
         case "":
+
             break;
 
         default:

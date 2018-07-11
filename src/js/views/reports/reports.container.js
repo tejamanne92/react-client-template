@@ -1,13 +1,12 @@
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import EventsComponent from './events.component';
-
+import ReportsComponent from './reports.component';
 
 const mapStateToProps = (state) => {
     return {
         login: state.login,
         alert: state.alert,
-        events: state.events
+        reports: state.reports
     }
 }
 
@@ -17,4 +16,4 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     }
 }
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(EventsComponent));
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(ReportsComponent));
